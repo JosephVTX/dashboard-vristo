@@ -126,19 +126,7 @@ const Setting = () => {
                         <p className="text-white-dark text-xs">
                             Selecciona la posición de la navegación.
                         </p>
-                        <div className="grid grid-cols-3 gap-2 mt-3">
-                            <button
-                                type="button"
-                                className={`${
-                                    menu === "horizontal"
-                                        ? "btn-primary"
-                                        : "btn-outline-primary"
-                                } btn`}
-                                onClick={() => toggleMenu("horizontal")}
-                            >
-                                Horizontal
-                            </button>
-
+                        <div className="grid grid-cols-2 gap-2 mt-3">
                             <button
                                 type="button"
                                 className={`${

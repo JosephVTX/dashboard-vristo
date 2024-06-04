@@ -16,7 +16,7 @@ export default function Sidebar() {
                     >
                         <img
                             className="ml-[5px] w-8 flex-none"
-                            src="/assets/images/logo.svg"
+                            src="https://react.vristo.sbthemes.com/assets/images/logo.svg"
                             alt="logo"
                         />
                         <span className="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">
@@ -29,10 +29,30 @@ export default function Sidebar() {
                         className="collapse-icon flex h-8 w-8 items-center rounded-full transition duration-300 hover:bg-gray-500/10 rtl:rotate-180 dark:text-white-light dark:hover:bg-dark-light/10"
                         onClick={toggleSidebar}
                     >
-                        <Icon
-                            icon="akar-icons:chevron-down"
-                            className="h-5 w-5"
-                        />
+                        <svg
+                            width={20}
+                            height={20}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="m-auto rotate-90"
+                        >
+                            <path
+                                d="M19 11L12 17L5 11"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                            <path
+                                opacity="0.5"
+                                d="M19 7L12 13L5 7"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                        </svg>
                     </button>
                 </div>
                 <PerfectScrollbar className="relative h-[calc(100vh-80px)]">
