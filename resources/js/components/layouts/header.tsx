@@ -4,7 +4,6 @@ import Dropdown from "../ui/dropdown";
 import { useThemeStore } from "@/store/themeStore";
 
 export default function Header() {
-
     const { toggleSidebar } = useThemeStore();
 
     return (
@@ -30,8 +29,10 @@ export default function Header() {
                             className="collapse-icon flex flex-none rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary ltr:ml-2 rtl:mr-2 dark:bg-dark/40 dark:text-[#d0d2d6] dark:hover:bg-dark/60 dark:hover:text-primary lg:hidden"
                             onClick={toggleSidebar}
                         >
-                            
-                            <Icon icon="material-symbols:menu" className="h-5 w-5" />
+                            <Icon
+                                icon="material-symbols:menu"
+                                className="h-5 w-5"
+                            />
                         </button>
                     </div>
 

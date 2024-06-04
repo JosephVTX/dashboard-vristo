@@ -3,6 +3,7 @@ import { useThemeStore } from "@/store/themeStore";
 
 export default function AppLayout({ children }: React.PropsWithChildren) {
     const { sidebar, menu, layout } = useThemeStore();
+
     return (
         <div
             className={cn(

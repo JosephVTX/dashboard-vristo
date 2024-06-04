@@ -1,7 +1,6 @@
-import ContentAnimation from "@/components/layouts/content-animation";
 import Footer from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
-import MainContainer from "@/components/layouts/main-container";
+import Setting from "@/components/layouts/settings";
 import Sidebar from "@/components/layouts/sidebar";
 import AppLayout from "@/layouts/app-layout";
 import { cn } from "@/lib/utils";
@@ -12,6 +11,7 @@ export default function DashboardLayout({ children }: React.PropsWithChildren) {
     return (
         <AppLayout>
             <div className="relative">
+                <Setting />
                 <div
                     className={cn(
                         navbar,
