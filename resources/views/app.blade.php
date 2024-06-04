@@ -22,11 +22,20 @@
     @inertia
 
     <script>
-        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.body.classList.add('dark');
-        } else {
-                document.body.classList.remove('dark')
-            }
+
+        const theme = localStorage.getItem('theme') 
+
+        const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+        if (!theme) {
+            document.body.classList.add(system)
+        } else if (theme === 'dark') {
+            document.body.classList.add('dark')
+        } else if (theme === 'light') {
+            document.body.classList.remove('dark')
+        } else if (theme === 'system') {
+            document.body.classList.add(system)
+        }
 
         document.documentElement.dir = localStorage.getItem('rtlClass') || 'ltr';
     </script>

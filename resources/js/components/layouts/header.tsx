@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icon } from "@iconify/react";
 import { Link } from "@inertiajs/react";
 import Dropdown from "../ui/dropdown";
 import { useThemeStore } from "@/store/themeStore";

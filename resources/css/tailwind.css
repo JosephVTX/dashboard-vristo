@@ -11,7 +11,7 @@
     }
 
     body {
-        @apply bg-[#fafafa] font-nunito;
+        @apply bg-[#fafafa] font-nunito overflow-x-hidden;
     }
 
     body.dark {
