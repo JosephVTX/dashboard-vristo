@@ -166,18 +166,6 @@ const Setting = () => {
                             <button
                                 type="button"
                                 className={`${
-                                    layout === "boxed-layout"
-                                        ? "btn-primary"
-                                        : "btn-outline-primary"
-                                } btn flex-auto`}
-                                onClick={() => toggleLayout("boxed-layout")}
-                            >
-                                Caja
-                            </button>
-
-                            <button
-                                type="button"
-                                className={`${
                                     layout === "full"
                                         ? "btn-primary"
                                         : "btn-outline-primary"
@@ -185,6 +173,17 @@ const Setting = () => {
                                 onClick={() => toggleLayout("full")}
                             >
                                 Full
+                            </button>
+                            <button
+                                type="button"
+                                className={`${
+                                    layout === "boxed-layout"
+                                        ? "btn-primary"
+                                        : "btn-outline-primary"
+                                } btn flex-auto`}
+                                onClick={() => toggleLayout("boxed-layout")}
+                            >
+                                Caja
                             </button>
                         </div>
                     </div>
