@@ -1,7 +1,14 @@
-import React from 'react'
+import DashboardLayout from "@/layouts/dashboard-layout";
+import { useCounterStore } from "@/store/counterStore";
 
 export default function index() {
-  return (
-    <div>index</div>
-  )
+    const { count, increment, decrement } = useCounterStore();
+    return (
+        <DashboardLayout>
+            {count}
+
+            <button onClick={increment}>INCREMENT</button>
+            <button onClick={decrement}>DECREMENT</button>
+        </DashboardLayout>
+    );
 }

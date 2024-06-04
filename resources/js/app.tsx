@@ -15,6 +15,7 @@ createInertiaApp({
             import.meta.glob("./pages/**/*.tsx")
         ),
     setup({ el, App, props }) {
+        el.removeAttribute("data-page");
         const root = createRoot(el);
 
         root.render(<App {...props} />);
